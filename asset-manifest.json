@@ -1,13 +1,13 @@
 {
-  "main.css": "bjnewman.github.io/availity-app/availity-registration/static/css/main.66849c38.chunk.css",
-  "main.js": "bjnewman.github.io/availity-app/availity-registration/static/js/main.94601351.chunk.js",
-  "main.js.map": "bjnewman.github.io/availity-app/availity-registration/static/js/main.94601351.chunk.js.map",
-  "runtime~main.js": "bjnewman.github.io/availity-app/availity-registration/static/js/runtime~main.47ea4657.js",
-  "runtime~main.js.map": "bjnewman.github.io/availity-app/availity-registration/static/js/runtime~main.47ea4657.js.map",
-  "static/js/2.5924fcad.chunk.js": "bjnewman.github.io/availity-app/availity-registration/static/js/2.5924fcad.chunk.js",
-  "static/js/2.5924fcad.chunk.js.map": "bjnewman.github.io/availity-app/availity-registration/static/js/2.5924fcad.chunk.js.map",
-  "index.html": "bjnewman.github.io/availity-app/availity-registration/index.html",
-  "precache-manifest.6075f574c75633c4d5521c2e18cf47df.js": "bjnewman.github.io/availity-app/availity-registration/precache-manifest.6075f574c75633c4d5521c2e18cf47df.js",
-  "service-worker.js": "bjnewman.github.io/availity-app/availity-registration/service-worker.js",
-  "static/css/main.66849c38.chunk.css.map": "bjnewman.github.io/availity-app/availity-registration/static/css/main.66849c38.chunk.css.map"
+  "main.css": "bjnewman.github.io/availity-app/static/css/main.66849c38.chunk.css",
+  "main.js": "bjnewman.github.io/availity-app/static/js/main.bc94a907.chunk.js",
+  "main.js.map": "bjnewman.github.io/availity-app/static/js/main.bc94a907.chunk.js.map",
+  "runtime~main.js": "bjnewman.github.io/availity-app/static/js/runtime~main.779b0755.js",
+  "runtime~main.js.map": "bjnewman.github.io/availity-app/static/js/runtime~main.779b0755.js.map",
+  "static/js/2.5924fcad.chunk.js": "bjnewman.github.io/availity-app/static/js/2.5924fcad.chunk.js",
+  "static/js/2.5924fcad.chunk.js.map": "bjnewman.github.io/availity-app/static/js/2.5924fcad.chunk.js.map",
+  "index.html": "bjnewman.github.io/availity-app/index.html",
+  "precache-manifest.e324e6e6ccc73faa84dcd0b786888e6f.js": "bjnewman.github.io/availity-app/precache-manifest.e324e6e6ccc73faa84dcd0b786888e6f.js",
+  "service-worker.js": "bjnewman.github.io/availity-app/service-worker.js",
+  "static/css/main.66849c38.chunk.css.map": "bjnewman.github.io/availity-app/static/css/main.66849c38.chunk.css.map"
 }
