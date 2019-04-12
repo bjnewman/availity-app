@@ -10,8 +10,8 @@ class RegisterForm extends Component {
   constructor(props) {
 	super(props);
 	this.state = {
-		fields: {},
-		errors: {}
+		fields: {username: '', NPI: '', email: '', phoneNumber: '', address: ''},
+		errors: {username: '', NPI: '', email: '', phoneNumber: '', address: ''}
 	}
 
 	this.handleChange = this.handleChange.bind(this);
@@ -24,8 +24,9 @@ class RegisterForm extends Component {
 	  this.setState({
 	    fields
 	  });
+  }
 
-  submituserRegistrationForm(e) {
+  submitRegistrationForm(e) {
       e.preventDefault();
       if (this.validateForm()) {
           let fields = {};
@@ -41,7 +42,7 @@ class RegisterForm extends Component {
   }
   
   validateForm() {
-  	let fields = this.state.fields;
+  	let {fields} = this.state;
   	let errors = {};
     let formIsValid = true
 
@@ -80,7 +81,7 @@ class RegisterForm extends Component {
     }
 
     if (typeof fields["phoneNumber"] !== "undefined") {
-        if (fields["phoneNumber"].match(/\d/g).length !== 10) {
+        if (! (fields["phoneNumber"].match(/\d/g) && fields["phoneNumber"].match(/\d/g).length === 10)) {
           formIsValid = false;
           errors["phoneNumber"] = "Please enter a valid 10 digit phone number.";
         }
@@ -89,12 +90,12 @@ class RegisterForm extends Component {
     // NPI validation uses the luhn algorithm for a 10 digit number with the final digit as a check digit, see https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand/Downloads/NPIcheckdigit.pdf
     // for this naive implementation we can just check for 10 digits
     if (!fields["NPI"]) {
-    	formisValid = false
+    	formIsValid = false
     	errors["NPI"] = "Please enter your NPI number"
     }
     
     if (typeof fields["NPI"] !== "undefined") {
-        if (fields["NPI"].match(/\d/g).length !== 10) {
+        if (!(fields["NPI"].match(/\d/g) && fields["NPI"].match(/\d/g).length === 10)) {
           formIsValid = false;
           errors["NPI"] = "Please enter a valid NPI number.";
         }
@@ -102,11 +103,15 @@ class RegisterForm extends Component {
 
     // street address validation is complex and in production use cases should use a specialized library, here we can just check for invalid characters
     if (!fields["address"]) {
-    	formisValid = false
+    	formIsValid = false
     	errors["NPI"] = "Please enter your business address";
     }
 
-    
+    this.setState({
+        errors: errors
+      });
+    return formIsValid;
+
 
   }
 
@@ -118,7 +123,7 @@ class RegisterForm extends Component {
           <AppBar
              title="Availity Registration"
            />
-	          <form method="post"  name="userRegistrationForm"  onSubmit={this.submituserRegistrationForm}>
+	          <form method="post"  name="userRegistrationForm"  onSubmit={this.submitRegistrationForm}>
 		           <TextField
 		             placeholder="Enter your First and Last Name"
 		             label="Full Name"
@@ -165,7 +170,7 @@ class RegisterForm extends Component {
 		             value={this.state.fields.email}
 		             />
 		           <div className="errorMsg">{this.state.errors.email}</div>
-		           <RaisedButton label="Register" primary={true} style={style} onClick={submituserRegistrationForm}/>
+		           <RaisedButton label="Register" primary={true} style={style} onClick={this.submitRegistrationForm}/>
 		         </form>
 	         </div>
          </MuiThemeProvider>
