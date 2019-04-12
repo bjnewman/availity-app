@@ -1,8 +1,11 @@
 {
   "name": "availity-registration",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "bjnewman.github.io/availity-app",
   "dependencies": {
+    "gh-pages": "^2.0.1",
+    "material-ui": "^0.20.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
