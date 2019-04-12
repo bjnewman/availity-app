@@ -2,7 +2,7 @@
   "name": "availity-registration",
   "version": "0.1.0",
   "private": false,
-  "homepage": "bjnewman.github.io/availity-app",
+  "homepage": "https://bjnewman.github.io/availity-app",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "material-ui": "^0.20.2",
