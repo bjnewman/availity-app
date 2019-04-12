@@ -41,4 +41,4 @@ function balancedParens(str) {
 }
 ```
 
-5. 
+5. The registration form is available to view at https://bjnewman.github.io/availity-app/
