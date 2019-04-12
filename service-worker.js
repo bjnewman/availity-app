@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "bjnewman.github.io/availity-app/precache-manifest.e324e6e6ccc73faa84dcd0b786888e6f.js"
+  "/availity-app/precache-manifest.de383d2c90f9d86dde025001884f235c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("bjnewman.github.io/availity-app/index.html", {
+workbox.routing.registerNavigationRoute("/availity-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
